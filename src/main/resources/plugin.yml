@@ -1,0 +1,18 @@
+name: AziendePlugin
+version: 1.0.0
+main: it.assonnatooh.aziende.AziendePlugin
+api-version: '1.20'
+author: Assonnatooh
+description: Gestione aziende, dipendenti, gradi e contratti di lavoro.
+commands:
+  aziendeadmin:
+    description: Comandi amministrativi per le aziende
+    usage: /aziendeadmin <create|elimina|pex|info> ...
+    permission: aziende.admin
+  azienda:
+    description: Gestione della tua azienda e dei contratti
+    usage: /azienda <assumi|licenzia|info|rango> ...
+permissions:
+  aziende.admin:
+    description: Permette di amministrare le aziende
+    default: op
